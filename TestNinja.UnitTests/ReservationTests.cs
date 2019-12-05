@@ -25,7 +25,7 @@ namespace TestNinja.UnitTests
             var user = new User();
             var reservation = new Reservation { MadeBy = user };
 
-            var result = reservation.CanBeCancelledBy(user);
+            bool result = reservation.CanBeCancelledBy(user);
 
             Assert.IsTrue(result);
         }
