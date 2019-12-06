@@ -1,5 +1,6 @@
 ﻿using TestNinja.Fundamentals;
 using NUnit.Framework;
+using System.Linq;
 
 namespace TestNinja.UnitTests
 
@@ -43,7 +44,10 @@ namespace TestNinja.UnitTests
 
             var result = _math.GetOddNumbers(5);
 
-            Assert.That(result, Is.Not.Empty);
+            //Assert.That(result, Is.Not.Empty);
+            //Assert.That(result.Count(), Is.EqualTo(3));
+            Assert.That(result, Is.EquivalentTo(new[] { 1, 3, 5 }));
+
         } 
     }
 
