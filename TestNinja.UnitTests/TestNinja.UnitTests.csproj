@@ -53,6 +53,7 @@
     <Compile Include="MathTests.cs" />
     <Compile Include="HtmlFormatterTests.cs" />
     <Compile Include="CustomerControllerTests.cs" />
+    <Compile Include="ErrorLoggerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TestNinja\TestNinja.csproj">
