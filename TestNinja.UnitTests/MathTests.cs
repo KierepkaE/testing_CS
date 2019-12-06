@@ -27,7 +27,7 @@ namespace TestNinja.UnitTests
         }
 
         [Test]
-        [TestCase(2,1,2)]
+        [TestCase(2, 1, 2)]
         [TestCase(1, 2, 2)]
         [TestCase(1, 1, 1)]
 
