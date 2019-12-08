@@ -38,6 +38,17 @@ namespace TestNinja.UnitTests
         }
 
 
+
+        [Test]
+        public void GetOutput_InputIsNotDivisibleBy3Or5_ReturnSameInputNumber()
+        {
+            var result = FizzBuzz.GetOutput(1);
+
+            Assert.That(result, Is.EqualTo("1"));
+
+        }
+
+
     }
 
 
