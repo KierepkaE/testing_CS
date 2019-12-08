@@ -55,6 +55,7 @@
     <Compile Include="CustomerControllerTests.cs" />
     <Compile Include="ErrorLoggerTests.cs" />
     <Compile Include="FizzBuzzTests.cs" />
+    <Compile Include="DemeritPointsCalculatorTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TestNinja\TestNinja.csproj">
