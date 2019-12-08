@@ -35,5 +35,43 @@ namespace TestNinja.UnitTests
             Assert.That(stack.Count, Is.EqualTo(0));
 
         }
+
+
+        [Test]
+        public void Pop_EmptyStack_ReturnInvalidOperationException()
+        {
+
+            var stack = new Stack<string>();
+            Assert.That(()=> stack.Pop(), Throws.InvalidOperationException);
+
+        }
+
+        [Test]
+        public void Pop_StackWithObjects_ReturnTopObjectFromTheStack()
+        {
+            var stack = new Stack<string>();
+
+            stack.Push("a");
+            stack.Push("b");
+            stack.Push("c");
+            var result = stack.Pop();
+            Assert.That(result, Is.EqualTo("c"));
+
+        }
+
+        [Test]
+        public void Pop_StackWithObjects_RemoveObjectFromTopOfTheStack()
+        {
+
+            var stack = new Stack<string>();
+
+            stack.Push("a");
+            stack.Push("b");
+            stack.Push("c");
+            stack.Pop();
+
+            Assert.That(stack.Count, Is.EqualTo(2));
+
+        }
     }
 }
